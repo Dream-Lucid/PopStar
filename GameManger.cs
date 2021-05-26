@@ -7,34 +7,34 @@ using UnityEngine.UI;
 public class GameManger : MonoBehaviour
 {
     public GameObject[] starObjs;
-    public int maxRow = 13;                         //����
-    public int maxColumn = 10;                      //����
-    public GameObject starGroup;                    //
-    public List<Star> StarList;                     //���Ǽ���
-    public List<Star> ClickedStarList;              //���������Ǽ���
+    public int maxRow = 13;                         
+    public int maxColumn = 10;                     
+    public GameObject starGroup;                   
+    public List<Star> StarList;                     
+    public List<Star> ClickedStarList;              
     public static GameManger gameManger_Instance;
     public int currentScore = 0;
-    public Text currentScoreText;                   //����
+    public Text currentScoreText;                   
     public int currentTotalScore = 0;
-    public Text currentTotalScoreText;              //�ܷ�
+    public Text currentTotalScoreText;             
     public int HurdleIndex = 1;
-    public Text hurdleText;                         //�ؿ�
+    public Text hurdleText;                         
     public int targetScore = 0;
-    public Text targetScoreText;                    //Ŀ��
+    public Text targetScoreText;                    
     public int judgeSwitch = 0;
     public Button play;
     public Button rank;
     public Button esc;
-    public Button repaly;                           //����
+    public Button repaly;                           
     public AudioSource clearSource;
-    public AudioSource bgm;                         //����
+    public AudioSource bgm;                         
     public GameObject[] particles;
     //public Button musicOn;
     //public Button musicOff;
     public Text Name;
     public InputField youName;
     public Button hhh;
-    public float destroytime = 1.5f;
+   
     // Start is called before the first frame update
     public void Start()
     {
@@ -295,7 +295,7 @@ public class GameManger : MonoBehaviour
         {
             rewardScore = 2000 - restStarCount * 100;
             currentTotalScore += rewardScore;
-            currentTotalScoreText.text = "�ܷ�:" + currentTotalScore;
+            currentTotalScoreText.text = "总分:" + currentTotalScore;
         }
     }
 
